@@ -1,0 +1,71 @@
+﻿@page "/cadastro"
+@model WebCars.Site.Pages.Login.RegisterModel
+
+@{
+    ViewData["Title"] = "Cadastre-se";
+    ViewData["Description"] = "WebCars: O seu mercado virtual para negócios automotivos, com carros e motos de qualidade em destaque.";
+    ViewData["Keywords"] = "carros, motos, compra, venda";
+}
+
+<div class="bg-primary" style="height: 15rem">
+</div>
+
+<div class="container my-5">
+    <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-lg-8">
+            <div class="bg-white rounded shadow p-5">
+                <div class="row">
+                    <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                        <span class="fs-4 fw-bold">Cadastre-se com suas redes sociais</span>
+
+                        <div class="mt-5">
+                            <a class="btn-facebook py-2 px-4 text-decoration-none rounded text-white fw-bold d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <img style="width: 20px" class="me-2" src="/img/icos/ico-facebook.svg" />
+                                Entrar com Facebook
+                            </a>
+                        </div>
+
+                        <div class="mt-3">
+                            <a class="btn-google py-2 px-4 text-decoration-none rounded fw-bold d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <img style="width: 20px" class="me-2" src="/img/icos/ico-google.svg" />
+                                Entrar com Google
+                            </a>
+                        </div>
+
+                        <div class="mt-3">
+                            <a class="btn-apple py-2 px-4 text-decoration-none rounded fw-bold d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <img style="width: 20px" class="me-2" src="/img/icos/ico-apple.svg" />
+                                Entrar com Apple
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-end d-none d-lg-block col-lg-1"></div>
+
+                    <div class="col-lg-5 offset-lg-1 text-center text-lg-start">
+                        <span class="fs-4 fw-bold">Crie uma conta com o seu e-mail</span>
+
+                        <div class="mt-5">
+                            <form>
+
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Digite seu nome completo" class="form-control" id="exampleInputPassword1">
+                                </div>
+
+                                <div class="mb-4">
+                                    <input type="email" placeholder="Digite seu e-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                               
+                                <a class="btn btn-primary text-center py-2 px-5 fw-bold">Criar conta</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-5 text-center">
+                        <span>Já tem uma conta? <a asp-page="/Login/Login" class="text-primary text-decoration-none fw-bold">Entrar</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33927.249
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCars.Site", "WebCars.Site\WebCars.Site.csproj", "{851A6B75-7F28-4B92-86DE-471638713D12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCars.Painel", "WebCars.Painel\WebCars.Painel.csproj", "{A5DFEE9E-53FE-403C-B9CA-A54BE3DD02A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{851A6B75-7F28-4B92-86DE-471638713D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851A6B75-7F28-4B92-86DE-471638713D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851A6B75-7F28-4B92-86DE-471638713D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851A6B75-7F28-4B92-86DE-471638713D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DFEE9E-53FE-403C-B9CA-A54BE3DD02A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DFEE9E-53FE-403C-B9CA-A54BE3DD02A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DFEE9E-53FE-403C-B9CA-A54BE3DD02A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DFEE9E-53FE-403C-B9CA-A54BE3DD02A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {396F4DFD-901C-40EC-9BB3-BEF9173E40C2}
+	EndGlobalSection
+EndGlobal

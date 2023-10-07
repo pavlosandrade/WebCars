@@ -1,0 +1,21 @@
+﻿@page "/veiculos/carros"
+@model WebCars.Site.Pages.Pesquisa.IndexModel
+
+@{
+    ViewData["Title"] = "Compra e venda";
+    ViewData["Description"] = "WebCars: O seu mercado virtual para negócios automotivos, com carros e motos de qualidade em destaque.";
+    ViewData["Keywords"] = "carros, motos, compra, venda";
+}
+
+
+
+<div class="container-fluid px-4  my-5">
+    <div class="row mx-0 mx-lg-4 px-0 ">
+        <div class="col-lg-3 mb-4 mb-lg-0">
+            <vc:filtro-estoque></vc:filtro-estoque>
+        </div>
+        <div class="col-lg-9">
+            <vc:estoque></vc:estoque>
+        </div>
+    </div>
+</div>

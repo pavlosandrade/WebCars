@@ -1,0 +1,76 @@
+﻿
+<div class="bg-white shadow rounded sticky-top p-2" id="filterEstoque">
+    <h2 class="accordion-header">
+        <button class="accordion-button" id="accordionFilterBu" type="button" data-bs-toggle="collapse" data-bs-target="#FilterContent" aria-expanded="true" aria-controls="FilterContent">
+            <span class="text-primary fw-bold">Filtrar por:</span>
+        </button>
+    </h2>
+    <div id="FilterContent" class="accordion-collapse collapse show" data-bs-parent="#accordionFilterEstoque">
+        <div class="accordion-body">
+            <nav class="">
+                <div class="nav nav-tabs justify-content-between" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-buy-car" data-bs-toggle="tab" data-bs-target="#nav-car" type="button" role="tab" aria-controls="nav-car" aria-selected="true">Carros</button>
+                    <button class="nav-link" id="nav-buy-cycle" data-bs-toggle="tab" data-bs-target="#nav-cycle" type="button" role="tab" aria-controls="nav-cycle" aria-selected="false">Motos</button>
+                </div>
+
+                <div class="mt-5">
+                    <span class="fs-6 fw-bold text-primary">Localização</span>
+                    <div class="mt-2">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control border-end-0" placeholder="Digite seu estado ou cidade" aria-label="Username" aria-describedby="addon-wrapping">
+                            <span class="input-group-text border-start-0" id="addon-wrapping">
+                                <img style="width: 24px" src="/img/icos/ico-location.svg" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="tab-content mt-3" id="nav-tabContent">
+
+                <hr />
+
+                <div class="tab-pane fade show active" id="nav-car" role="tabpanel" aria-labelledby="nav-buy-car" tabindex="0">
+                    <div class="mt-3 position-relative" style="z-index: 2">
+                        <span class="fs-6 fw-bold text-primary">Marca do carro</span>
+                        <select class="form-select mt-2" aria-label="select-marca">
+                            <option selected>Todas as Marca</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="ford">Ford</option>
+                            <option value="honda">Honda</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="mercedes">Mercedes-Benz</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-3 position-relative" style="z-index: 2">
+                        <span class="fs-6 fw-bold text-primary">Modelo do carro</span>
+                        <select class="form-select mt-2" aria-label="select-modelo" disabled>
+                            <option selected>Todos os Modelos</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-3 position-relative" style="z-index: 2">
+                        <span class="fs-6 fw-bold text-primary">Versão do carro</span>
+                        <select class="form-select mt-2" aria-label="select-versao" disabled>
+                            <option selected>Todos as Versões</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-3 d-block d-lg-none">
+                        <a class="btn btn-primary fw-bold w-100 py-2">FILTRAR</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-cycle" role="tabpanel" aria-labelledby="nav-buy-cycle" tabindex="0">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>

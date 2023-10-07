@@ -1,0 +1,50 @@
+﻿<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="bg-white shadow p-4 rounded">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <nav>
+                            <div class="nav nav-tabs justify-content-between justify-content-md-start" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-buy-car" data-bs-toggle="tab" data-bs-target="#nav-car" type="button" role="tab" aria-controls="nav-car" aria-selected="true">Comprar Carros</button>
+                                <button class="nav-link" id="nav-buy-cycle" data-bs-toggle="tab" data-bs-target="#nav-cycle" type="button" role="tab" aria-controls="nav-cycle" aria-selected="false">Comprar Motos</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content mt-4" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-car" role="tabpanel" aria-labelledby="nav-buy-car" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-8 mb-4 mb-lg-0">
+                                        <div class="input-group">
+                                            <span class="input-group-text border-end-0" id="basic-addon1">
+                                                <img style="width: 28px" src="/img/icos/ico-search.svg" />
+                                            </span>
+                                            <input type="text" class="form-control border-start-0" placeholder="Digite marca ou modelo do carro" aria-label="FilterCar" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <a asp-page="/Pesquisa/Index" class="btn btn-primary w-100 px-5 py-2 fw-bold">VER OFERTAS (27.845)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-cycle" role="tabpanel" aria-labelledby="nav-buy-cycle" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-8 mb-4 mb-lg-0">
+                                        <div class="input-group">
+                                            <span class="input-group-text border-end-0" id="basic-addon1">
+                                                <img style="width: 28px" src="/img/icos/ico-search.svg" />
+                                            </span>
+                                            <input type="text" class="form-control border-start-0" placeholder="Digite marca ou modelo da moto" aria-label="FilterCar" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <a class="btn btn-primary w-100 px-5 py-2 fw-bold">VER OFERTAS (8.624)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

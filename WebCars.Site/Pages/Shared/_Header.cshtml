@@ -1,0 +1,40 @@
+﻿<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white p-3 shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary d-flex align-items-center" asp-area="" asp-page="/Index">
+                <img style="width:48px" class="me-2" src="/img/logos/webcars-logo.svg" />
+                WebCars
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1 justify-content-end">
+                    <li class="nav-item justify-content-center d-flex">
+                        <div class="dropdown">
+                            <button type="button" class="btn bg-white w-100 d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <img style="width: 32px" class="me-2" src="/img/icos/ico-login.svg" />
+                                Entrar
+                            </button>
+                            <ul class="dropdown-menu border-0 p-2 shadow mt-2">
+                                <li>
+                                    <a asp-page="/Login/Login" class="dropdown-item d-flex align-items-center">
+                                        <img style="width: 24px" class="me-2" src="/img/icos/ico-user-login.svg" />
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="mt-2">
+                                    <a asp-page="/Login/Register" class="dropdown-item d-flex align-items-center">
+                                        <img style="width: 24px" class="me-2" src="/img/icos/ico-user-register.svg" />
+                                        Cadastre-se
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

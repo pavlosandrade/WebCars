@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+
+
+    <!-- ==============================================
+    Technical Descriptions
+    =============================================== -->
+    <title>WebCars - @ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Description"]">
+    <meta name="keywords" content="@ViewData["Keywords"]">
+    <meta name="author" content="https://github.com/pavlosandrade">
+
+
+    <!-- ==============================================
+    Metatags
+    =============================================== -->
+    <meta property="og:site_name" content=">WebCars">
+    <meta property="og:title" content=">WebCars - @ViewData["Title"]">
+    <meta property="og:description" content=">WebCars - @ViewData["Description"]">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="@Context.Request.Scheme://@Context.Request.Host@Context.Request.Path">
+    <meta property="og:image" content="@Context.Request.Scheme://@Context.Request.Host/img/logos/logo-link.jpg">
+    <meta property="og:locale" content="pt-br">
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="/img/logos/favicon.svg" />
+
+    <!-- ==============================================
+    Google Fonts
+    =============================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebCars.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <partial name="_Header" />
+    <main role="main" class="">
+        @RenderBody()
+    </main>
+    <partial name="_Footer" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

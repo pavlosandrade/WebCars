@@ -1,0 +1,143 @@
+﻿@page "/marca/carro-nome"
+@model WebCars.Site.Pages.Pesquisa.FichaVeiculoModel
+
+@{
+    ViewData["Title"] = "Nome Carro";
+    ViewData["Description"] = "Descricao sobre o carro";
+    ViewData["Keywords"] = "keywords do carro";
+}
+
+
+<vc:banner-ficha></vc:banner-ficha>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="bg-white p-4 p-md-5 shadow rounded">
+                <div class="">
+                    <h1 class="fs-2 text-uppercase fw-bold">Marca <span class="text-primary">Nome do carro</span></h1>
+                    <h3 class="fs-6 text-primary text-uppercase">descricao do carro</h3>
+                    <span class="fs-1 d-block d-lg-none">R$ 116.000</span>
+                    <a href="#form-ficha" class="btn btn-primary py-2 w-100 d-block d-lg-none rounded mt-3">Enviar mensagem</a>
+                </div>
+
+                <div class="mt-5">
+                    <small class="text-primary">Cidade</small><br />
+                    <span class="fs-6 fw-bold text-dark">Ribeirão Preto - SP</span>
+                </div>
+
+                <div class="mt-3">
+                    <div class="row">
+                        @for(var i = 0; i < 2; i++)
+                        {
+                            <div class="col-lg-3 col-6 mb-3">
+                                <small class="text-primary">Ano</small><br />
+                                <span class="fs-6 fw-bold text-dark">2022/2021</span>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-3">
+                                <small class="text-primary">Km</small><br />
+                                <span class="fs-6 fw-bold text-dark">58.800</span>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-3">
+                                <small class="text-primary">Cambio</small><br />
+                                <span class="fs-6 fw-bold text-dark">Automático</span>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-3">
+                                <small class="text-primary">Combustível</small><br />
+                                <span class="fs-6 fw-bold text-dark">Gasolina e álcool</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h2 class="text-primary fs-4">Sobre esse carro</h2>
+                    <p class="fs-6 text-dark">
+                        Versão+Completa: Rodas 18'' - Faróis LED - Sensor de Estacionamento Dianteiro e Traseiro c/ Câmera de Ré 
+                        - Start/Stop - Wifi, Espelhamento Apple CarPlay p/ BLUETOOTH e p/ Cabo USB - Seletor de Modos de Condução,
+                        SoundAktor e Dupla Saída de Escapamento - Abertura e Fechamento de Portas p/ Presença - Paddle Shift
+                        , Retrovisores Elétricos c/ Rebatimento e Fotocrômico, A/C Digital - Computador de Bordo, Piloto Automatico -
+                        Bancos Concha, Porta-Luvas Refrigerado, Acabamentos em Vermelho e Black Piano - Saída de Ar e USB nos Bancos Traseiros
+                        - TODAS as Revisões Feitas SEMPRE em Concessionária VW - Na Garantia de Fábrica até 10/11/2024 - 02 Pneus Novos 0km 
+                        - Muito Novo! Km de ESTRADA - Carro Extremamente Econômico - Manual e Chave Reserva - IPVA Pago e Licenciado -
+                        NÃO aceito Trocas!
+                    </p>
+                </div>
+
+                <div class="mt-5">
+                    <h2 class="text-primary fs-4">Itens do veículo</h2>
+                    <div class="row">
+                        @for (var i = 0; i < 13; i++)
+                        {
+                            <div class="col-lg-3 col-6 mb-3">
+                                <span class="fs-6 fw-bold text-dark">item de série</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-primary rounded p-5 shadow">
+                <div class="">
+                    <h2 class="text-white fs-4">Compare Preços</h2>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4 col-6 mb-3 mb-lg-0">
+                            <small class="text-white">Valor Anunciado</small><br />
+                            <span class="fs-1 fw-bold text-white">116.000</span>
+                        </div>
+
+                        <div class="col-md-4 col-6 mb-3 mb-lg-0">
+                            <small class="text-white">Tabela Fipe</small><br />
+                            <span class="fs-1 fw-bold text-white">125.000</span>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <small class="text-white">%Preço</small><br />
+                            <span class="fs-1 fw-bold text-white">7,2% V</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="bg-white p-4 rounded shadow sticky-lg-top sticky-bottom">
+                <small class="text-primary d-none d-lg-block fw-bold">Preço</small>
+                <span class="fs-1 d-none d-lg-block">R$ 116.000</span>
+
+                <div class="mt-0 mt-lg-3 text-center text-lg-start">
+                    <h3 class="text-primary fs-6">Envie mensagem ao vendedor</h3>
+
+                    <form class="mt-3" id="form-ficha">
+                        <div class="mb-3">
+                            <input type="text" placeholder="Digite seu nome completo" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="email" placeholder="Digite seu e-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="tel" placeholder="Telefone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Mensagem" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a class="btn btn-primary w-100 py-2 fw-bold rounded">Enviar mensagem</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
